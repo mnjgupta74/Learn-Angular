@@ -1,0 +1,38 @@
+
+<!-- Interpolation Binding -->
+<p>My Name Is {{dynName}}</p>
+<br>
+<br>
+<br>
+{{5+9}}
+<br>
+<br>
+{{"Welcome " + dynName}}
+<br>
+<br>
+{{dynName.length}}
+<br>
+<br>
+{{dynName.toUpperCase()}}
+<br>
+<br>
+{{myMethod()}}
+<br>
+<br>
+<br>
+My app Status is {{appStatus? "Online" : "Offline"}}
+<br>
+<br>
+<br>
+My app Status is {{appStatus? Status1 : Status2}}
+<br>
+<br>
+<!-- Property Binding -->
+<input type="text" name="" [disabled]="!false" id="" [value]="dynName">
+<br>
+<br>
+<input type="text" name="" [hidden]="false" id="" bind-value="appStatus?Status1 : Status2">
+
+<!-- in Interpolation we can use only String values but in Property
+binding we can use string as well as boolean but can not use string concatinating
+can not use in [disabled]="false" in String Interpolation-->

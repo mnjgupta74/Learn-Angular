@@ -9,11 +9,13 @@ import { TopnavComponent } from './MyContainer/topnav/topnav.component';
 import { HeaderComponent } from './MyContainer/header/header.component';
 import { TextSectionComponent } from './MyContainer/text-section/text-section.component';
 import { TextSection1Component } from './MyContainer/text-section1/text-section1.component';
+import { DataBindComponent } from './data-bind/data-bind.component';
+import { ClassStyleComponent } from './data-bind/class-style/class-style.component';
 
 @NgModule({
   declarations: [
     AppComponent
-    ,MyContainerComponentClass, MyContainer1Component, TopnavComponent, HeaderComponent, TextSectionComponent, TextSection1Component
+    ,MyContainerComponentClass, MyContainer1Component, TopnavComponent, HeaderComponent, TextSectionComponent, TextSection1Component, DataBindComponent, ClassStyleComponent
   ],
   imports: [
     BrowserModule,
