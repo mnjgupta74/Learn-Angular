@@ -1,0 +1,19 @@
+.page-area
+{
+    background-color: #95c2de;
+    margin: auto;
+    height: auto;
+    width: auto;
+    position: relative;
+}
+body {
+    background-color: #95c2de;
+  }
+  .head{
+      text-align: center;
+      margin-left: 400px;
+  }
+  .card{
+    margin: 20px;
+    display: inline-block;
+}

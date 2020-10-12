@@ -12,4 +12,21 @@ export class ClassStyleComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // myPro:boolean = false;
+
+  
+  // myStyle1:string = "15px"
+
+  // isActive : boolean = false;
+
+  // multiClasses
+  // ={
+  //   class1:true,
+  //   class2:true,
+  //   class3:true,
+  // }
+  multiStyle ={
+    'background': 'red',
+    'border' : '10px solid green'
+  }
 }

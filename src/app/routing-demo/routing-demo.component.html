@@ -1,0 +1,20 @@
+<div class="container">
+<header class="header">
+    <nav>
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link" routerLink="/home" [routerLinkActiveOptions]={exact:true} routerLinkActive="active" >Home</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="/about" routerLinkActive="active">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="/product" routerLinkActive="active">Products</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="/login" routerLinkActive="active">Login</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="/pagenotfound" routerLinkActive="active">404</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="/parent" routerLinkActive="active">Buy Products</a></li>
+        </ul>
+    </nav>
+</header>
+<br>
+<div>
+    <router-outlet></router-outlet>
+</div>
+</div>
+

@@ -1,0 +1,26 @@
+<!-- <div>Event Binds..</div> -->
+
+<button (click)="onAddCart()">Add to Cart</button>
+
+<br><br>
+
+<p >{{msg}}</p>
+<!-- 
+<br>
+<br> -->
+<!-- <input type = "text" value="myinut1" (click) = "onInputClick($event)"> -->
+
+<br><br>
+
+<button value="Laptop" (click)="onProductAdd($event)">Laptop</button>&nbsp;&nbsp;&nbsp;
+<button value="Tv" (click)="onProductAdd($event)">Tv</button>&nbsp;&nbsp;&nbsp;
+<button value="Washing Machine" (click)="onProductAdd($event)">Washing Machine</button>
+
+<!-- Template Reference variable.. -->
+<br>
+<br>
+<br>
+<br>
+<input #inputInfo type = "text" value = "inputName" name = "manoj Gupta">
+
+<button (click) = "getinputInfo(inputInfo)">Get Info</button>

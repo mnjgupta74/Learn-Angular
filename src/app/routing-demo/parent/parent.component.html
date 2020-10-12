@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="page-area">
+      <div class="text-center">
+        <h4 class="head"><b>Products</b></h4>
+        
+    </div>
+    <div class="alert alert-right border d-flex align-item-center" *ngIf="addedProduct">
+        <strong>{{addedProduct}} </strong> &nbsp; is Selected and Added in Cart 
+        <button class="btn btn-success ml-auto">Checkout</button>
+                    </div>
+        <div class="row">
+            
+    <div class="col-md-12">
+        <div class="card" style="width: 12rem;">
+            <img src="../../../assets/images/Laptop.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Laptop</h5>
+              <button (click)="onSelectProduct('Laptop')" class="btn btn-success">Select this Product</button>
+            </div>
+          </div>
+    <!-- </div>
+    <div class="col-md-3"> -->
+        <div class="card" style="width: 12rem;">
+            <img src="../../../assets/images/Mobile.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Mobile</h5>
+              <button (click)="onSelectProduct('Mobile')" class="btn btn-success">Select this Product</button>
+            </div>
+          </div>
+    <!-- </div>
+    <div class="col-md-3"> -->
+        <div class="card" style="width: 12rem;">
+            <img src="../../../assets/images/Desktop.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Desktop</h5>
+              <button (click)="onSelectProduct('Desktop')" class="btn btn-success">Select this Product</button>
+            </div>
+          </div>
+    <!-- </div>
+    <div class="col-md-3"> -->
+        <div class="card" style="width: 14rem;">
+            <img src="../../../assets/images/Washing Machine.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Washing Machine</h5>
+              <button (click)="onSelectProduct('Washing Machine')" class="btn btn-success">Select this Product</button>
+            </div>
+          </div>
+    </div>
+    <div class="col-md-12 bg-success text-white text-center py-4">
+        <h2 *ngIf="!productSelected">Please Select any Product</h2>
+        <h2 *ngIf="productSelected">{{selectedProduct}} is Selected</h2>
+        <button class="btn" (click)="onAddProduct()"> Add to Cart</button>
+    </div>
+        </div>
+        <!-- <div class="row">
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
+    </div>
+        </div> -->
+    </div>
+    </div>

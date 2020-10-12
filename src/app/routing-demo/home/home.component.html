@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="page-area">
+        <div class="row">
+            <h4 class="head">Home</h4>
+        </div>
+
+        <div class="products">
+            <ng-container *ngIf="statusOnline">
+                <div  *ngFor="let proitem of products">
+                    {{proitem.name}}
+                </div>
+            </ng-container>
+
+        </div>
+    </div></div>

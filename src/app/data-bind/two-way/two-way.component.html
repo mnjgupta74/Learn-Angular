@@ -1,0 +1,27 @@
+<input #txtUName type="text" value="txtInput" name="userName" [(ngModel)] = "uName">
+<p>{{uName}}</p>
+<br>
+
+<div class="row">
+    <div class="col-xs-12 col-12 col-md-4 form-group">
+      <input type="text"
+             placeholder="Datepicker"
+             class="form-control"
+             bsDatepicker>
+    </div>
+    <div class="col-xs-12 col-12 col-md-4 form-group">
+      <input type="text"
+             placeholder="Daterangepicker"
+             class="form-control"
+             bsDaterangepicker>
+    </div>
+  </div>
+
+  <br>
+  <button type="button" class="btn btn-primary" (click)="isCollapsed = !isCollapsed"
+        [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">Toggle collapse
+</button>
+<hr>
+<div id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true">
+  <div class="well well-lg card card-block card-header">Some content</div>
+</div>
